@@ -29,7 +29,7 @@ class ProductsPage extends StatelessWidget {
 
               ),
               itemBuilder: (c,i)=>InkWell(
-                  onTap: ()=>Navigator.push(context, MaterialPageRoute(builder: (c)=>ProductDetailPage())),
+                  onTap: ()=>Navigator.push(context, MaterialPageRoute(builder: (c)=>const ProductDetailPage())),
                   child: item()))
           )
         ],
