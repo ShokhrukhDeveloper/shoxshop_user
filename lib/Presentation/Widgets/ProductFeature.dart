@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+
+import '../Pages/SpecialProductsPage/SpecialProductPage.dart';
 class ProductFeature extends StatelessWidget {
   const ProductFeature({Key? key, required this.title, required this.color}) : super(key: key);
 final String title;
@@ -21,13 +23,16 @@ final Color color;
                     fontWeight: FontWeight.w500,
                     fontFamily: "DM Sans"),
               ),
-              Text(
-                "See All",
-                style: TextStyle(
-                    fontSize: 14.0,
-                    fontWeight: FontWeight.w300,
-                    color: Color(0xff3669C9),
-                    fontFamily: "DM Sans"),
+              InkWell(
+                onTap: ()=>Navigator.push(context, MaterialPageRoute(builder: (c)=>SpeacialProductsPage(title: title,))),
+                child: Text(
+                  "See All",
+                  style: TextStyle(
+                      fontSize: 14.0,
+                      fontWeight: FontWeight.w300,
+                      color: Color(0xff3669C9),
+                      fontFamily: "DM Sans"),
+                ),
               ),
             ],),
 

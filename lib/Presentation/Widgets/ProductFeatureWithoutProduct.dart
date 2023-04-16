@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shoxshop_mobile/Presentation/Pages/SpecialProductsPage/SpecialProductPage.dart';
 class  ProductFeatureWithout extends StatelessWidget {
   const ProductFeatureWithout ({Key? key, required this.title}) : super(key: key);
   final String title;
@@ -21,13 +22,16 @@ class  ProductFeatureWithout extends StatelessWidget {
                     fontWeight: FontWeight.w500,
                     fontFamily: "DM Sans"),
               ),
-              Text(
-                "See All",
-                style: TextStyle(
-                    fontSize: 14.0,
-                    fontWeight: FontWeight.w300,
-                    color: Color(0xff3669C9),
-                    fontFamily: "DM Sans"),
+              InkWell(
+                onTap: ()=>Navigator.push(context, MaterialPageRoute(builder: (c)=>SpeacialProductsPage(title: title,))),
+                child: Text(
+                  "See All",
+                  style: TextStyle(
+                      fontSize: 14.0,
+                      fontWeight: FontWeight.w300,
+                      color: Color(0xff3669C9),
+                      fontFamily: "DM Sans"),
+                ),
               ),
             ],),
 

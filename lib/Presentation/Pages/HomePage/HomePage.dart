@@ -27,10 +27,11 @@ class _HomePageState extends State<HomePage> {
           ),],
       ),
       body: Padding(
-        padding: const EdgeInsets.all(15.0),
+        padding: const EdgeInsets.only(left: 15.0,right: 15.0),
         child: SingleChildScrollView(
           child: Column(
             children: const [
+              SizedBox(height: 15,),
               AppTextFiled(),
               Padding(
                 padding: EdgeInsets.all(8.0),
