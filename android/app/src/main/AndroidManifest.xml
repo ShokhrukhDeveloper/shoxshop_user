@@ -1,7 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.shoxshop.uz.shoxshop_mobile">
+    <uses-permission android:name="android.permission.INTERNET"/>
    <application
-        android:label="shoxshop_mobile"
+        android:label="Shox 🛍️"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

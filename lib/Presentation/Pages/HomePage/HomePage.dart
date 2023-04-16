@@ -38,7 +38,7 @@ class _HomePageState extends State<HomePage> {
                 child: ShowWidget(),
               ),
               CategoryWidget(),
-              ProductFeature(title: "Featured Product",color: Colors.green,),
+              ProductFeature(title: "Featured Product",color: Color(0xff0ACF83),),
               ProductFeature(title: "Best Sellers",color: Color(0xff3669C9),),
               ProductFeatureWithout(title: "New Arrivals",),
               ProductFeatureWithout(title: "Top Rated Product",),
