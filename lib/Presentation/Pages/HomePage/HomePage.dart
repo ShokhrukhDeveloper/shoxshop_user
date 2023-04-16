@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shoxshop_mobile/Presentation/Widgets/AppTextField.dart';
+import 'package:shoxshop_mobile/Presentation/Widgets/BottomNavigrionBar/BottomNavigationBar.dart';
 import 'package:shoxshop_mobile/Presentation/Widgets/CategoryWidget.dart';
 import 'package:shoxshop_mobile/Presentation/Widgets/ProductFeature.dart';
 import 'package:shoxshop_mobile/Presentation/Widgets/ProductFeatureWithoutProduct.dart';
@@ -48,6 +49,7 @@ class _HomePageState extends State<HomePage> {
           ),
         ),
       ),
+      bottomNavigationBar: const AppBottomNavigationBar(),
     );
   }
 }
