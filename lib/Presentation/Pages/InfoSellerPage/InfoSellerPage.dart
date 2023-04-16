@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shoxshop_mobile/Presentation/Pages/SearchInStoryPage/SearchInStory.dart';
 
 import '../ProductDetailPage/ProductInfoPage.dart';
 class InfoSellerPage extends StatelessWidget {
@@ -9,6 +10,12 @@ class InfoSellerPage extends StatelessWidget {
     return  Scaffold(
       appBar: AppBar(
         title: const Text("Info Seller"),
+        centerTitle: true,
+        actions: [
+          IconButton(onPressed: ()=>Navigator.push(context, MaterialPageRoute(builder: (c)=>const SearchInStoryPage())), icon:  const Icon(Icons.search,color: Colors.black,)),
+          IconButton(onPressed: (){}, icon:  const Icon(Icons.shopping_cart,color: Colors.black,)),
+
+        ],
       ),
       body: Container(
         color: Colors.white,
