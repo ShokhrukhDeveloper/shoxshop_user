@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:shoxshop_mobile/Presentation/Pages/InfoSellerPage/InfoSellerPage.dart';
 import 'package:shoxshop_mobile/Presentation/Widgets/ProductFeatureWithoutProduct.dart';
 
+import '../ReviewProductPage/ReviewProductPage.dart';
+
 class ProductDetailPage extends StatelessWidget {
   const ProductDetailPage({Key? key}) : super(key: key);
 
@@ -243,21 +245,24 @@ class ProductDetailPage extends StatelessWidget {
 
 
 
-              Container(
-                height: 50,
-                width: double.infinity,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10),
-                  border: Border.all(color: Colors.black)
-                ),
-                child: const Center(
-                  child: Text(
-                    "See All Review",
-                    style: TextStyle(
-                      fontSize: 14,
-                      fontWeight: FontWeight.w500,
-                      color: Colors.black,
-                      fontFamily: "DM Sans",
+              InkWell(
+                onTap: ()=>Navigator.push(context, MaterialPageRoute(builder: (c)=>const ReviewProductPage())),
+                child: Container(
+                  height: 50,
+                  width: double.infinity,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    border: Border.all(color: Colors.black)
+                  ),
+                  child: const Center(
+                    child: Text(
+                      "See All Review",
+                      style: TextStyle(
+                        fontSize: 14,
+                        fontWeight: FontWeight.w500,
+                        color: Colors.black,
+                        fontFamily: "DM Sans",
+                      ),
                     ),
                   ),
                 ),
@@ -411,6 +416,6 @@ class ProductDetailPage extends StatelessWidget {
   }
 
 }
+const commm="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
 const String desc="The speaker unit contains a diaphragm that is precision-grown from NAC Audio bio-cellulose, making it stiffer, lighter and stronger than regular PET speaker units, and allowing the sound-producing diaphragm to vibrate without the levels of distortion found in other speakers. \n\n The speaker unit contains a diaphragm that is precision-grown from NAC Audio bio-cellulose, making it stiffer, lighter and stronger than regular PET speaker units, and allowing the sound-producing diaphragm to vibrate without the levels of distortion found in other speakers. " ;
 
-const commm="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";

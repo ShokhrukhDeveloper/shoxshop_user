@@ -12,16 +12,25 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Shox Shop',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-
         primaryColor: Colors.white,
         appBarTheme: const AppBarTheme(
           backgroundColor: Colors.white,
+          iconTheme: IconThemeData(
+         size: 30,color: Colors.black,
+          shadows: [
+            Shadow(color: Colors.black38,offset: Offset(1.5, 1.5),blurRadius:    6),
+            Shadow(color: Colors.black38,offset: Offset(-1.5, -1.5),blurRadius: 6),
+            Shadow(color: Colors.black38,offset: Offset(1.5, -1.5),blurRadius:   6),
+            Shadow(color: Colors.black38,offset: Offset(-1.5, 1.5),blurRadius:   6),
+          ]
+          ),
+
           titleTextStyle: TextStyle(
             fontSize: 18,
-            color: Colors.blue,
+            color: Colors.black,
             fontFamily: "DM Sans"
           )
         )
